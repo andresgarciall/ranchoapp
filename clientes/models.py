@@ -17,7 +17,7 @@ class Cliente(models.Model):
     direccion=models.CharField(max_length=100)
     email=models.CharField(max_length=50)
     servicio=models.ForeignKey(Servicios, on_delete=models.CASCADE, blank=True, null=True)
-    fecha_registro=models.DateTimeField('registro')
+    fecha_registro=models.DateTimeField('check in')
     fecha_salida=models.DateTimeField('check out')
    
     def __str__(self):
